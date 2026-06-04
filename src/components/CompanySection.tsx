@@ -34,7 +34,7 @@ export default function CompanySection() {
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-stone-400">
               <span className="w-8 h-px bg-[#b38446]" />
-              Our Hospitality Ideals
+              Our Hospitality Ideal
             </div>
 
             <h2 className="font-display font-bold text-3xl md:text-5xl text-stone-950 tracking-tight leading-tight">
