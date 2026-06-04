@@ -145,7 +145,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
               <span>Back to Home View</span>
             </button>
             <div className="space-y-1">
-              <h1 className="font-display font-bold text-3xl sm:text-5xl tracking-tight text-white">
+              <h1 className="font-serif font-extrabold text-4xl sm:text-5xl tracking-tight text-white italic">
                 Bespoke Reservations
               </h1>
               <p className="font-sans text-stone-400 text-xs sm:text-sm font-light">
@@ -170,7 +170,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
       {/* 2. LIVE STEP PROGRESS GAUGE */}
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 bg-white border border-stone-200/60 shadow-sm rounded-3xl p-6">
-          <div className="font-display font-semibold text-stone-800 text-sm tracking-wide shrink-0">
+          <div className="font-serif font-bold text-stone-800 text-sm tracking-wide shrink-0 italic">
             Booking Steps:
           </div>
           
@@ -222,7 +222,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
             >
               <div className="text-center max-w-3xl mx-auto space-y-3">
                 <span className="text-[10px] sm:text-xs font-mono font-bold uppercase text-[#b38446] tracking-[0.2em] block">STEP 1 OF 2</span>
-                <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-stone-900 tracking-tight leading-tight">
+                <h2 className="font-serif font-extrabold text-3xl sm:text-5xl text-stone-900 tracking-tight leading-tight">
                   Choose Your Perfect Alabamian Sanctuary
                 </h2>
                 <p className="font-sans text-stone-500 font-light text-xs sm:text-sm leading-relaxed">
@@ -277,7 +277,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
                         <div className="space-y-3">
                           {/* Title and rating */}
                           <div className="space-y-1">
-                            <h3 className="font-display font-extrabold text-lg sm:text-xl text-stone-900 leading-tight group-hover:text-[#b38446] transition-colors">
+                            <h3 className="font-serif font-bold text-xl sm:text-2xl text-stone-900 leading-tight group-hover:text-[#b38446] transition-colors">
                               {room.name}
                             </h3>
                             <span className="text-[10px] text-[#b38446] font-mono tracking-wider font-semibold block uppercase">Hamilton Luxury Preferred Suite</span>
@@ -348,7 +348,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
                   <span>Choose a different room</span>
                 </button>
                 <span className="text-xs font-mono font-bold uppercase text-[#b38446] tracking-widest block">STEP 2 OF 2</span>
-                <h2 className="font-display font-semibold text-2xl sm:text-4xl text-stone-900 tracking-tight">
+                <h2 className="font-serif font-bold text-2xl sm:text-4xl text-stone-900 tracking-tight">
                   Stay Schedule & Personal Coordination
                 </h2>
                 <p className="font-sans text-stone-500 font-light text-sm max-w-2xl leading-relaxed">
@@ -405,7 +405,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
                   </div>
 
                   <div className="flex items-center justify-between pb-4 border-b border-stone-100">
-                    <h3 className="font-display font-semibold text-stone-900 text-lg">
+                    <h3 className="font-serif font-bold text-stone-900 text-lg">
                       1. Reservation Parameters
                     </h3>
                     <span className="text-3xs font-mono bg-stone-100 border text-stone-500 px-3 py-1 rounded-full uppercase">
@@ -479,7 +479,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
                   </div>
 
                   <div className="flex items-center justify-between pb-4 border-b border-stone-100 pt-3">
-                    <h3 className="font-display font-semibold text-stone-900 text-lg">
+                    <h3 className="font-serif font-bold text-stone-900 text-lg">
                       2. Guest Resident Information
                     </h3>
                   </div>
@@ -552,7 +552,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
 
                   {/* 3. Complimentary Services Options Selection */}
                   <div className="flex items-center justify-between pb-4 border-b border-stone-100 pt-3">
-                    <h3 className="font-display font-semibold text-stone-900 text-lg">
+                    <h3 className="font-serif font-bold text-stone-900 text-lg">
                       3. Complimentary Welcome Perks
                     </h3>
                   </div>
@@ -717,7 +717,7 @@ export default function BookingPage({ onBackToHome, preSelectedRoomId }: Booking
                 </div>
 
                 <div className="text-center space-y-2">
-                  <h3 className="font-display font-bold text-2xl md:text-3xl text-stone-900 leading-tight">
+                  <h3 className="font-serif font-bold text-3xl md:text-4xl text-stone-900 leading-tight italic">
                     Reservation Secured!
                   </h3>
                   <p className="font-sans text-stone-500 font-light text-xs sm:text-sm max-w-sm mx-auto leading-relaxed">

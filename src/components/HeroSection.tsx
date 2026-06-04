@@ -64,7 +64,7 @@ export default function HeroSection({ onGetRentClick, onPlayWalkthrough }: HeroS
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 z-20 bg-white/95 backdrop-blur-md text-black p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-[2rem] shadow-md max-w-[190px] sm:max-w-[280px] md:max-w-[320px] flex flex-col gap-1.5 sm:gap-3 md:gap-4 hover:translate-y-[-4px] transition-transform duration-300 border border-white/30"
+          className="absolute top-24 right-4 sm:top-28 md:top-8 z-20 bg-white/95 backdrop-blur-md text-black p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-[2rem] shadow-md max-w-[190px] sm:max-w-[280px] md:max-w-[320px] flex flex-col gap-1.5 sm:gap-3 md:gap-4 hover:translate-y-[-4px] transition-transform duration-300 border border-white/30"
           id="discover-card"
         >
           {/* Grey circle play button */}
@@ -147,42 +147,44 @@ export default function HeroSection({ onGetRentClick, onPlayWalkthrough }: HeroS
           </div>
         </div>
 
-        {/* --- Slide Indicators & Left/Right manual triggers --- */}
-        {/* Floating manual left/right navigation arrows, positioned mid-screen for maximum mobile convenience (zero overlap with text & buttons) */}
-        <button
-          onClick={handlePrev}
-          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-25 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/45 hover:bg-[#b38446] backdrop-blur-md text-white/90 border border-white/10 flex items-center justify-center hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-md"
-          aria-label="Previous backdrop"
-          id="slide-arrow-prev"
-        >
-          <ChevronLeft size={16} />
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-25 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/45 hover:bg-[#b38446] backdrop-blur-md text-[#f5ebd6] border border-white/10 flex items-center justify-center hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-md"
-          aria-label="Next backdrop"
-          id="slide-arrow-next"
-        >
-          <ChevronRight size={16} />
-        </button>
+        {/* --- Unified premium slide controller bar --- */}
+        {/* Avoids cluttered floating elements by grouping the left arrow, indicator dots, and right arrow into a single gorgeous card placed cleanly above the bottom marquee */}
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-16 md:left-auto md:right-8 md:translate-x-0 md:bottom-14 z-20 bg-stone-950/80 backdrop-blur-md px-4 py-2 sm:py-2.5 rounded-full border border-white/10 shadow-lg flex items-center gap-4 select-none">
+          <button
+            onClick={handlePrev}
+            className="w-7 h-7 rounded-full hover:bg-[#b38446] text-white/90 hover:text-white flex items-center justify-center hover:scale-105 active:scale-90 transition-all cursor-pointer"
+            aria-label="Previous backdrop"
+            id="slide-arrow-prev"
+          >
+            <ChevronLeft size={15} />
+          </button>
+          
+          <div className="flex items-center gap-1.5 px-0.5">
+            {HERO_SLIDES.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentSlide(idx)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  idx === currentSlide ? 'w-5 bg-[#b38446]' : 'w-1.5 bg-white/45 hover:bg-white/80'
+                }`}
+                title={`Switch to slide ${idx + 1}`}
+                id={`slide-dot-${idx}`}
+              />
+            ))}
+          </div>
 
-        {/* Small translucent indicator dots floating cleanly at the top-left, 100% clash-free */}
-        <div className="absolute left-4 top-4 sm:left-6 sm:top-6 z-20 bg-black/40 backdrop-blur-md px-3 py-2 rounded-xl border border-white/15 flex items-center gap-1.5">
-          {HERO_SLIDES.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                idx === currentSlide ? 'w-5 bg-[#b38446]' : 'w-1.5 bg-white/40 hover:bg-white/70'
-              }`}
-              title={`Switch to slide ${idx + 1}`}
-              id={`slide-dot-${idx}`}
-            />
-          ))}
+          <button
+            onClick={handleNext}
+            className="w-7 h-7 rounded-full hover:bg-[#b38446] text-[#f5ebd6] hover:text-white flex items-center justify-center hover:scale-105 active:scale-90 transition-all cursor-pointer"
+            aria-label="Next backdrop"
+            id="slide-arrow-next"
+          >
+            <ChevronRight size={15} />
+          </button>
         </div>
 
         {/* --- Infinite Marquee inside of hero section at the very bottom --- */}
-        <div className="absolute bottom-0 left-0 w-full z-20">
+        <div className="absolute bottom-0 left-0 w-full z-15">
           <Marquee />
         </div>
 
