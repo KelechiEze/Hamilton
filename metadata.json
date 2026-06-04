@@ -1,0 +1,6 @@
+{
+  "name": "Hamilton Inn Bessemer",
+  "description": "Hamilton Inn Bessemer - Birmingham hot breakfast amenities, comfortable lodging, accessible suites and online bookings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
