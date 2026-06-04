@@ -2,7 +2,11 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Home, BedDouble, ChevronDown } from 'lucide-react';
 
-export default function PropertiesSection() {
+interface PropertiesSectionProps {
+  onBookRoom?: (roomId: string) => void;
+}
+
+export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps) {
   const [visibleCount, setVisibleCount] = useState<number>(3);
 
   const properties = [
@@ -160,9 +164,30 @@ export default function PropertiesSection() {
                 </p>
               </div>
 
-              {/* Premium Copper Brown Price Highlight Block */}
-              <div className="bg-[#b38446] text-white font-display font-semibold text-lg md:text-xl px-5 py-4 rounded-xl mb-5 shadow-inner">
-                {prop.price}
+              {/* Premium Copper Brown Price & Booking CTA Action Box */}
+              <div className="flex items-stretch gap-3 mb-5">
+                <div className="flex-grow bg-stone-100 border border-stone-200/50 text-stone-900 font-display font-bold text-sm sm:text-base px-5 py-4 rounded-xl flex items-center justify-center">
+                  <span>{prop.price}</span>
+                </div>
+                {onBookRoom && (
+                  <button 
+                    onClick={() => {
+                      const getRoomId = (id: string) => {
+                        if (id === 'prop-1') return 'room-king-grand';
+                        if (id === 'prop-2') return 'room-double-queen';
+                        if (id === 'prop-3') return 'room-deluxe-whirlpool';
+                        if (id === 'prop-4') return 'room-accessible-king';
+                        if (id === 'prop-5') return 'room-double-queen';
+                        return 'room-king-grand';
+                      };
+                      onBookRoom(getRoomId(prop.id));
+                    }}
+                    className="bg-[#b38446] hover:bg-stone-950 text-white font-sans font-semibold text-[11px] sm:text-xs px-5 py-4 rounded-xl transition-all duration-300 cursor-pointer uppercase tracking-wider shrink-0 flex items-center gap-1 shadow-sm active:scale-97"
+                    id={`book-prop-${prop.id}`}
+                  >
+                    <span>Book Now</span>
+                  </button>
+                )}
               </div>
 
               {/* Specs & address section footer layout with dividers */}

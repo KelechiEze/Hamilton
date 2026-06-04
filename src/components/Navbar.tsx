@@ -12,14 +12,15 @@ export default function Navbar({ onFindRentalClick, onNavigateSection }: NavbarP
   return (
     <header className="w-full sticky top-0 z-50">
       {/* Top Banner for Call Us & Urgent Info */}
-      <div className="w-full bg-[#1c1107] text-[#e8dcc4] py-2 px-6 text-center text-xs font-sans flex flex-col sm:flex-row items-center justify-between gap-2 border-b border-[#2e1d0c]/30">
+      <div className="w-full bg-[#1c1107] text-[#e8dcc4] py-2 px-4 sm:px-6 text-xs font-sans flex flex-row items-center justify-between gap-2 border-b border-[#2e1d0c]/30">
         <div className="flex items-center gap-2">
-          <span className="bg-[#b38446] text-white font-semibold text-[10px] uppercase px-1.5 py-0.5 rounded">Special Offer</span>
-          <span>Complimentary Hot Breakfast & High-Speed WiFi Included with Every Stay</span>
+          <span className="bg-[#b38446] text-white font-semibold text-[10px] uppercase px-1.5 py-0.5 rounded shrink-0">Special Offer</span>
+          <span className="hidden md:inline">Complimentary Hot Breakfast & High-Speed WiFi Included with Every Stay</span>
+          <span className="hidden sm:inline md:hidden">Breakfast & WiFi Included</span>
         </div>
-        <div className="flex items-center gap-1.5 font-semibold text-[#f5ebd6]">
+        <div className="flex items-center gap-1.5 font-semibold text-[#f5ebd6] shrink-0">
           <Phone size={12} className="text-[#b38446]" />
-          <span>Call Us Today: <a href="tel:205-425-2010" className="hover:underline">205-425-2010</a></span>
+          <span className="text-[10px] sm:text-xs">Call Us Today: <a href="tel:205-425-2010" className="hover:underline">205-425-2010</a></span>
         </div>
       </div>
 
