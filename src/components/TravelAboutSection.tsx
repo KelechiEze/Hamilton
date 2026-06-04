@@ -2,8 +2,8 @@ import { motion } from 'motion/react';
 import { Info, ArrowUpRight } from 'lucide-react';
 
 export default function TravelAboutSection() {
-  const landscapeImg = 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80'; // hotel exterior
-  const portraitImg = 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80'; // warm bedroom / pool vibe
+  const landscapeImg = '/first.png'; // hotel exterior
+  const portraitImg = '/sixth.png'; // warm bedroom / pool vibe
 
   return (
     <section className="w-full max-w-7xl mx-auto px-6 py-20 bg-transparent animate-[fadeIn_0.5s_ease-out]" id="about-travel">

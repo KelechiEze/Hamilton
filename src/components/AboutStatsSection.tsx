@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 
 export default function AboutStatsSection() {
-  const inlineImage = 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=150&q=80';
-  const rightFeaturedImage = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80';
+  const inlineImage = '/first.png';
+  const rightFeaturedImage = '/second.png';
 
   return (
     <section className="w-full max-w-7xl mx-auto px-6 py-24 bg-transparent" id="about-stats">

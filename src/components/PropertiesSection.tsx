@@ -9,12 +9,12 @@ interface PropertiesSectionProps {
 export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps) {
   const [visibleCount, setVisibleCount] = useState<number>(3);
 
-  const properties = [
+ const properties = [
     {
       id: 'prop-1',
       title: 'Executive King Room',
       subtitle: 'Premium comfort with pillowtop mattress & desk.',
-      image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
+      image: '/ed1.jpg',
       price: '$95 / Night',
       tag: 'Best Value',
       address: 'Hamilton Inn Bessemer, AL Off Hwy 11',
@@ -26,7 +26,7 @@ export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps
       id: 'prop-2',
       title: 'Standard Double Queen Room',
       subtitle: 'Cozy and spacious, perfect for family stay trips.',
-      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+      image: '/ed3.jpg',
       price: '$115 / Night',
       tag: 'Family Favorite',
       address: 'Hamilton Inn Bessemer, AL Off Hwy 11',
@@ -38,7 +38,7 @@ export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps
       id: 'prop-3',
       title: 'Whirlpool Premium King Suite',
       subtitle: 'In-room deep therapeutic hot tub setup.',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
+      image: '/ed2.avif',
       price: '$145 / Night',
       tag: 'Luxury Upgrade',
       address: 'Hamilton Inn Bessemer, AL Off Hwy 11',
@@ -50,7 +50,7 @@ export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps
       id: 'prop-4',
       title: 'Accessible Comfort King Room',
       subtitle: 'Fully ADA compliant layouts with roll-in shower safety.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: '/ed3.jpg',
       price: '$105 / Night',
       tag: 'ADA Accessible',
       address: 'Hamilton Inn Bessemer, AL Off Hwy 11',
@@ -62,7 +62,7 @@ export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps
       id: 'prop-5',
       title: 'Extended Two-Room Suite',
       subtitle: 'Extra separate living lounge & cozy sofa bed.',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+      image: '/ed5.jpg',
       price: '$135 / Night',
       tag: 'Premium Extended',
       address: 'Hamilton Inn Bessemer, AL Off Hwy 11',
@@ -74,7 +74,7 @@ export default function PropertiesSection({ onBookRoom }: PropertiesSectionProps
       id: 'prop-6',
       title: 'Executive Business Preferred Suite',
       subtitle: 'Complete workspace desk plus custom breakfast privilege.',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+      image: '/ed6.avif',
       price: '$125 / Night',
       tag: 'Business Select',
       address: 'Hamilton Inn Bessemer, AL Off Hwy 11',

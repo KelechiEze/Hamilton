@@ -4,27 +4,27 @@ export default function GallerySection() {
   const row1 = [
     {
       id: 'r1-1',
-      url: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
+      url: '/first.png',
       alt: 'Modern minimalist white villa'
     },
     {
       id: 'r1-2',
-      url: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=800&q=80',
+      url: '/second.png',
       alt: 'White country cottage'
     },
     {
       id: 'r1-3',
-      url: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80',
+      url: '/third.png',
       alt: 'Aerial swimming pool landscape'
     },
     {
       id: 'r1-4',
-      url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+      url: '/fifth.png',
       alt: 'Exquisite modern home and pool'
     },
     {
       id: 'r1-5',
-      url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
+      url: '/fourth.png',
       alt: 'Patio view with sliding doors'
     }
   ];
@@ -32,27 +32,27 @@ export default function GallerySection() {
   const row2 = [
     {
       id: 'r2-1',
-      url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      url: '/ninth.png',
       alt: 'Luxurious Mediterranean estate'
     },
     {
       id: 'r2-2',
-      url: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+      url: '/juk1.jpg',
       alt: 'Modern architecture at sunset'
     },
     {
       id: 'r2-3',
-      url: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=800&q=80',
+      url: '/juk2.avif',
       alt: 'Charming cottage white fence'
     },
     {
       id: 'r2-4',
-      url: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80',
+      url: '/juk3.jpg',
       alt: 'Luxury kitchen layout'
     },
     {
       id: 'r2-5',
-      url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+      url: '/eight.png',
       alt: 'Stunning pool mansion sunset'
     }
   ];

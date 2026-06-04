@@ -36,17 +36,17 @@ export default function Loader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.04 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#170e06] text-[#e8dcc4] select-none"
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white text-[#170e06] select-none"
         >
           {/* Subtle warm luxury background glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#b38446]/10 rounded-full blur-[80px] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#b38446]/5 rounded-full blur-[80px] pointer-events-none" />
 
           {/* Visual Canvas containing the blocks building */}
           <div className="relative w-64 h-64 flex items-center justify-center">
             
             <svg
               viewBox="0 0 200 200"
-              className="w-48 h-48 drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)]"
+              className="w-48 h-48 drop-shadow-[0_12px_24px_rgba(0,0,0,0.1)]"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -55,7 +55,7 @@ export default function Loader() {
                 cx="140"
                 cy="50"
                 r="6"
-                fill="#e8dcc4"
+                fill="#b38446"
                 initial={{ opacity: 0, scale: 0.2, y: 0, x: 0 }}
                 animate={{
                   opacity: [0, 0.65, 0.35, 0],
@@ -76,7 +76,7 @@ export default function Loader() {
                 cx="140"
                 cy="50"
                 r="5.5"
-                fill="#b38446"
+                fill="#d4a373"
                 initial={{ opacity: 0, scale: 0.2, y: 0, x: 0 }}
                 animate={{
                   opacity: [0, 0.7, 0.4, 0],
@@ -97,7 +97,7 @@ export default function Loader() {
                 cx="140"
                 cy="50"
                 r="7"
-                fill="#bdac94"
+                fill="#e8dcc4"
                 initial={{ opacity: 0, scale: 0.2, y: 0, x: 0 }}
                 animate={{
                   opacity: [0, 0.55, 0.25, 0],
@@ -120,7 +120,7 @@ export default function Loader() {
                 width="160"
                 height="12"
                 rx="4"
-                fill="#2b1a0a"
+                fill="#d4a373"
                 initial={{ opacity: 0, scaleX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
@@ -159,7 +159,7 @@ export default function Loader() {
                 width="48"
                 height="40"
                 rx="6"
-                fill="#6e4f25"
+                fill="#9c6e3e"
                 initial={{ opacity: 0, scale: 0.4 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type: 'spring', damping: 11, stiffness: 90, delay: 0.8 }}
@@ -168,7 +168,7 @@ export default function Loader() {
               {/* BLOCK 5: The grand entrance arch/doorway */}
               <motion.path
                 d="M88,148 L88,124 C88,121 90,119 93,119 L107,119 C110,119 112,121 112,124 L112,148 Z"
-                fill="#e8dcc4"
+                fill="#170e06"
                 initial={{ scaleY: 0 }}
                 animate={{ scaleY: 1 }}
                 style={{ originY: '148px' }}
@@ -180,7 +180,7 @@ export default function Loader() {
                 cx="58"
                 cy="118"
                 r="6"
-                fill="#e8dcc4"
+                fill="#170e06"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 1.35, type: 'spring', stiffness: 120 }}
@@ -191,7 +191,7 @@ export default function Loader() {
                 cx="142"
                 cy="118"
                 r="6"
-                fill="#e8dcc4"
+                fill="#170e06"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 1.45, type: 'spring', stiffness: 120 }}
@@ -204,7 +204,7 @@ export default function Loader() {
                 width="16"
                 height="32"
                 rx="2"
-                fill="#472e14"
+                fill="#9c6e3e"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 52 }}
                 transition={{ type: 'spring', damping: 12, delay: 1.25 }}
@@ -213,7 +213,7 @@ export default function Loader() {
               {/* BLOCK 9: Iconic Triangle House Roof */}
               <motion.polygon
                 points="30,100 100,43 170,100"
-                fill="#3a2510"
+                fill="#d4a373"
                 initial={{ opacity: 0, y: -45 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ type: 'spring', damping: 13, stiffness: 110, delay: 0.7 }}
@@ -221,14 +221,14 @@ export default function Loader() {
             </svg>
 
             {/* Glowing outer framing ring */}
-            <div className="absolute inset-0 border border-white/5 rounded-full scale-110 animate-pulse pointer-events-none" />
+            <div className="absolute inset-0 border border-[#b38446]/10 rounded-full scale-110 animate-pulse pointer-events-none" />
           </div>
 
           {/* Symmetrical Brand Title */}
           <div className="text-center mt-6 z-10">
             <div className="flex items-center justify-center gap-2">
               <Hotel size={15} className="text-[#b38446]" />
-              <span className="font-display font-bold text-xs uppercase tracking-widest text-[#f5ebd6]">
+              <span className="font-display font-bold text-xs uppercase tracking-widest text-[#170e06]">
                 Hamilton Inn
               </span>
             </div>

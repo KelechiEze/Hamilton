@@ -3,28 +3,28 @@ import { Room, Review } from './types';
 export const HERO_SLIDES = [
   {
     id: 'slide-1',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2000&auto=format&fit=crop', // beautiful hotel exterior/room vibe
+    image: '/first.png', // beautiful hotel exterior/room vibe
     title: 'Welcome to Hamilton Inn Hotel Bessemer',
     subtitle: 'Bessemer, Alabama',
     description: 'Hamilton Inn Bessemer offers affordable comfort, modern amenities, and a convenient location off Highway 11 with easy access to downtown Birmingham.',
   },
   {
     id: 'slide-2',
-    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2000&auto=format&fit=crop', // bright breakfast/dinning room vibe
+    image: '/eight.png', // bright breakfast/dinning room vibe
     title: 'Complimentary Hot Breakfast Buffet',
     subtitle: 'Sausage, Waffles & Eggs',
     description: 'Start your morning with our delicious and free breakfast including sausage, eggs, muffins, breads, and golden waffles cooked fresh daily.',
   },
   {
     id: 'slide-3',
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2000&auto=format&fit=crop', // comfortable beds layout
+    image: '/sixth.png', // comfortable beds layout
     title: 'Well-Appointed Rooms & Cozy Suites',
     subtitle: 'King & Double Queen Layouts',
     description: 'Relax and unwind in rooms equipped with free high-speed WiFi, 32-inch flat-screen TVs, microwaves, mini-fridges, and on-site coffee makers.',
   },
   {
     id: 'slide-4',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2000&auto=format&fit=crop', // refreshing pool focus
+    image: '/third.png', // refreshing pool focus
     title: 'Convenient Travel Amenities',
     subtitle: 'Pool, Gym & Free Parking',
     description: 'Enjoy access to our seasonal outdoor swimming pool, fully-equipped fitness gym, functional business center, and complimentary guest parking.',
